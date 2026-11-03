@@ -51,6 +51,13 @@ summary{cursor:pointer;font-weight:600;list-style:none}
 summary::-webkit-details-marker{display:none}
 summary:focus-visible,a:focus-visible{outline:2px solid #f3a9c4;outline-offset:3px}
 details p{margin:10px 0 0;color:var(--muted);font-size:.95rem;max-width:56ch}
+.pay{position:relative;padding:20px;border-radius:14px;background:linear-gradient(160deg,rgba(225,29,58,.16),rgba(255,255,255,.02));box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 10px 30px rgba(0,0,0,.45),0 0 0 1px rgba(225,29,58,.7)}
+.kv{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:8px 0;border-bottom:1px solid var(--line)}
+.kv span{color:var(--muted);font-size:.9rem}
+.kv strong{text-align:right;font-weight:600}
+.kv .net{font-family:"Anton",Impact,sans-serif;font-weight:400;font-size:1.5rem;letter-spacing:.02em;background:var(--redgloss);-webkit-background-clip:text;background-clip:text;color:transparent}
+.warn{margin:16px 0 8px;font-weight:600}
+.payl{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
 a{color:#ff7d92}
 footer{margin-top:60px;color:var(--muted);font-size:.85rem}
 </style>
@@ -59,15 +66,13 @@ footer{margin-top:60px;color:var(--muted);font-size:.85rem}
 <main>
   <h1>The Meytti Beats</h1>
   <div class="eq" id="eq" aria-hidden="true"></div>
-  <p class="lede">Dark, melodic and hard trap beats. Four versions, flat prices, a plain-language license.</p>
+  <p class="lede">Dark, melodic and hard trap beats. Three versions, flat prices, a plain-language license.</p>
 
   <h2>Versions</h2>
   <ul class="v">
-    <li><div class="row"><span class="name">Tagged MP3</span><span class="price">$15</span></div>
-      <p>MP3 with producer tag. For demos, practice and writing. Not for official release.</p></li>
-    <li><div class="row"><span class="name">Untagged WAV</span><span class="price">$35</span></div>
+    <li><div class="row"><span class="name">Untagged WAV</span><span class="price">$25</span></div>
       <p>High-quality WAV, no tag. Allowed for release on streaming platforms and YouTube. Non-exclusive.</p></li>
-    <li><div class="row"><span class="name">WAV + Stems</span><span class="price">$70</span></div>
+    <li><div class="row"><span class="name">WAV + Stems</span><span class="price">$60</span></div>
       <p>WAV plus separated stems (drums, 808/bass, melody and more) for full mixing and mastering. Non-exclusive.</p></li>
     <li class="ex"><div class="row"><span class="name">Exclusive</span><span class="price">$150</span></div>
       <p>WAV plus stems. The beat is removed from my channel and never sold again.</p></li>
@@ -77,10 +82,21 @@ footer{margin-top:60px;color:var(--muted);font-size:.85rem}
   <ol class="steps">
     <li>Pick a beat and a version.</li>
     <li>Email <a href="mailto:themeytti@gmail.com">themeytti@gmail.com</a> or send me a DM on <a href="https://www.instagram.com/themeytti">Instagram (@themeytti)</a>.</li>
-    <li>I send you a USDT (TRC20) address. For WAV + Stems and Exclusive orders, send a $1 test first.</li>
+    <li>I send you a USDT (TRC20) address. For Stems and Exclusive orders, send a $1 test first.</li>
     <li>Once the payment shows in my wallet, I send your files and the license.</li>
   </ol>
-  <p class="note">Send USDT on the TRON (TRC20) network only. Funds sent on another network (ERC20, BEP20, TON and others) are lost. The sender pays the network fee.</p>
+  <h2>Payment: read before you send</h2>
+  <div class="pay" role="note">
+    <div class="kv"><span>Currency</span><strong>USDT</strong></div>
+    <div class="kv"><span>Network</span><strong class="net">TRON (TRC20) only</strong></div>
+    <div class="kv"><span>Address</span><strong>Sent privately after you contact me</strong></div>
+    <p class="warn">Do not send on any other network (ERC20, BEP20, TON and others). Funds sent on the wrong network are lost and I can’t recover them.</p>
+    <ul class="payl">
+      <li>For Stems and Exclusive orders, send a $1 test first.</li>
+      <li>Files are delivered after the payment appears in my wallet.</li>
+      <li>The sender pays the network fee.</li>
+    </ul>
+  </div>
 
   <h2>License</h2>
   <details>
@@ -89,11 +105,10 @@ footer{margin-top:60px;color:var(--muted);font-size:.85rem}
     <p><strong>2. What you can do.</strong> Record vocals over the beat and release the song commercially (streaming, YouTube, social media, live shows). Make one or more music videos for the song.</p>
     <p><strong>3. What you can’t do.</strong> Resell, share or redistribute the beat itself. Claim you produced or composed it. Register it in YouTube Content ID or similar systems (non-exclusive versions).</p>
     <p><strong>4. Credit.</strong> Credit the Producer as “The Meytti” in the title or description of every release that uses the beat.</p>
-    <p><strong>5. Tagged MP3.</strong> For demos, practice and writing only. Not licensed for official release.</p>
-    <p><strong>6. Non-exclusive versions.</strong> (Untagged WAV, WAV + Stems.) The Producer may sell the same beat to other buyers.</p>
-    <p><strong>7. Exclusive version.</strong> After payment, the beat is removed from the Producer’s channels and is not sold again. The Producer may keep showing the original in his portfolio.</p>
-    <p><strong>8. Payment and refunds.</strong> Payment is in USDT (TRC20). Files are digital, so there are no refunds after delivery.</p>
-    <p><strong>9. Not legal advice.</strong> This is a simple agreement between two parties and does not replace legal advice.</p>
+    <p><strong>5. Non-exclusive versions.</strong> (Untagged WAV, WAV + Stems.) The Producer may sell the same beat to other buyers.</p>
+    <p><strong>6. Exclusive version.</strong> After payment, the beat is removed from the Producer’s channels and is not sold again. The Producer may keep showing the original in his portfolio.</p>
+    <p><strong>7. Payment and refunds.</strong> Payment is in USDT (TRC20). Files are digital, so there are no refunds after delivery.</p>
+    <p><strong>8. Not legal advice.</strong> This is a simple agreement between two parties and does not replace legal advice.</p>
   </details>
 
   <footer>The Meytti Beats · <a href="mailto:themeytti@gmail.com">themeytti@gmail.com</a> · <a href="https://www.instagram.com/themeytti">instagram.com/themeytti</a></footer>
